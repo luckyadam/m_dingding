@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*
+ * @author: luckyadam
+ * @time: 2016-1-4
+*/
+
+@import "function";
+
+html,body {
+  height: 100%;
+}
+.lr {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url(../images/lr_bg.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.lr_slogan {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: rem(140px);
+}
+.lr_slogan_logo {
+  display: inline-block;
+  width: rem(120px);
+  height: rem(142px);
+  margin-bottom: rem(32px);
+}
+.lr_slogan_txt {
+  font-size: rem(40px);
+  color: #ffffff;
+  font-weight: 400;
+}
+.lr_btns {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: rem(14px) 0;
+  background-color: #f79f42;
+}
+
+.lr_btn {
+  width: 100%;
+  flex: 1;
+  color: #fff;
+  font-size: rem(30px);
+  text-align: center;
+  line-height: rem(52px);
+}
+.lr_btn:first-child {
+  border-right: 1px solid #cd7a23;
+}

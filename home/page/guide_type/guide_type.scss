@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/*
+ * @author: luckyadam
+ * @time: 2016-1-5
+*/
+@import "function";
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+.gt {
+  height: 100%;
+}
+.header {
+  background: url(../images/all_header_bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,6 @@
+$baseFontSize: 32px;
+
+// pxToRem
+@function rem($px){
+  @return ceil(($px/$baseFontSize)*10000)/10000+rem;
+}

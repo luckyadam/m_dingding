@@ -1,0 +1,18 @@
+<!--
+  @author: luckyadam
+  @name: nav_line
+  @date: home
+  @description: 导航线条
+-->
+
+<div class="nav_line display_flex">
+  <% for (var i = 0; i < splits; i++) { %>
+    <div class="nav_line_split<%= (position === i) ? ' active' : '' %>"></div>
+  <% } %>
+</div>
+
+<% widget.scriptStart() %>
+<script>
+
+</script>
+<% widget.scriptEnd() %>

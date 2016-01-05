@@ -1,0 +1,15 @@
+@import "function";
+
+.nav_line {
+  width: 100%;
+  height: rem(4px);
+  background-color: #999999;
+  z-index: 100;
+}
+.nav_line_split {
+  width: 100%;
+  flex: 1;
+}
+.nav_line_split.active {
+  background-color: #f79f42;
+}

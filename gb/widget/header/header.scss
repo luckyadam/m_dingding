@@ -1,0 +1,27 @@
+@import "function";
+
+.header {
+  width: 100%;
+  height: rem(98px);
+  font-size: rem(32px);
+  color: #fff;
+  line-height: rem(98px);
+  padding-left: rem(98px);
+  position: relative;
+}
+.header>h1 {
+  font-weight: 400;
+}
+.header:before {
+  content: '';
+  position: absolute;
+  width: rem(28px);
+  height: rem(30px);
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAdCAMAAABsU+d6AAAAKlBMVEX///////////////////////////////////////////////////////9q+00tAAAADXRSTlMAAQIDBBIYUo6dnqvWJ4GaWQAAAD9JREFUeNrty8sJACAMBNE1fqOm/3YVBEFwO8hcH4M3Aa31SMlsIyMbyekSCdW4iXI7qAGfHC/ODIazgCXPtQDc2glbfyTuUQAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: rem(28px);
+  top: 50%;
+  left: rem(34px);
+  transform: translateY(-50%);
+}

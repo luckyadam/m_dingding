@@ -1,0 +1,62 @@
+@import "function";
+
+.gt_type {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex: 1;
+}
+.gt_all {
+  background-image: url(../images/all_bg.jpg);
+}
+.gt_professional {
+  background-image: url(../images/professional_bg.jpg);
+}
+.gt_type_main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+}
+.gt_type_wrapper {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.gt_all .gt_type_main {
+}
+.gt_professional .gt_type_main {
+}
+.gt_type_btn {
+  display: inline-block;
+  width: rem(320px);
+  height: rem(106px);
+  text-align: center;
+  line-height: rem(78px);
+  font-size: rem(30px);
+  color: #fff;
+  box-sizing: border-box;
+  padding: rem(14px) rem(16px);
+  background-color: rgba(8,1,3,.5);
+  margin-bottom: rem(26px);
+}
+.gt_type_btn>span {
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.gt_type_txt {
+  font-size: rem(24px);
+}
