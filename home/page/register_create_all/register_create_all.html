@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>创建账户全民叮叮</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- global:css -->
+  <%= getCSS('gb.css', 'gb') %>
+  <!-- endglobal -->
+
+  <%= getCSS() %>
+  <script>
+    (function(l,s,c){var p=document;var r=p.documentElement;var j=window;var h="addEventListener";var o="getBoundingClientRect";var m="pageshow";var e=p.head||p.getElementsByTagName("HEAD")[0];var n=p.createElement("STYLE");var q;var a="text-size-adjust:100%;";var f="-webkit-"+a+"-moz-"+a+"-ms-"+a+"-o-"+a+a;var k=o in r;var g=null;function b(){var d=Math.min((k?r[o]().width:j.innerWidth)/(l/s),c);if(d!=g){n.innerHTML="html{"+"font-size:"+d+"px!important;"+f+"}";g=d}}function i(){clearTimeout(q);q=setTimeout(b,300)}l=l||320;s=s||16;c=c||32;e.appendChild(n);p[h]("DOMContentLoaded",b,false);if("on"+m in j){j[h](m,function(d){if(d.persisted){i()}},false)}else{j[h]("load",i,false)}j[h]("resize",i,false);b()})(640,32,32);
+  </script>
+</head>
+<!-- 注：加ontouchstart使css：active生效 -->
+<body ontouchstart>
+  <div class="mod_container rca">
+    <div class="rca_bg"></div>
+    <%= widget.load('header', { title: '创建账户' }, 'gb') %>
+    <%= widget.load('nav_line', { position: 1, splits: 4 }) %>
+    <div class="rca_form">
+      <p class="rca_form_p">
+        <input type="text" class="rca_form_text" placeholder="电子邮箱" >
+      </p>
+      <p class="rca_form_p">
+        <input type="text" class="rca_form_text" placeholder="手机号" >
+      </p>
+      <p class="rca_form_p display_flex">
+        <input type="text" class="rca_form_text rca_form_vcode" placeholder="验证码" ><button class="rca_form_vcode_btn">获取验证码</button>
+      </p>
+      <p class="rca_form_p">
+        <input type="password" class="rca_form_text" placeholder="密码" >
+      </p>
+      <p class="rca_form_p">
+        <input type="password" class="rca_form_text" placeholder="再次输入密码" >
+      </p>
+      <p class="rca_form_p rca_form_confirm">
+        <span class="rca_form_confirm_checkbox"></span><span class="rca_form_confirm_txt">同意“叮叮导游”的全民叮叮服务条款及隐私条款书</span>
+      </p>
+      <p class="rca_form_p rca_form_btns display_flex">
+        <a href="#" class="rca_form_btn rca_form_prev">上一步</a><a href="#" class="rca_form_btn rca_form_next">下一步</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- global:js -->
+  <%= getJS('lib.js', 'gb') %>
+  <!-- endglobal -->
+
+  <%= getJS() %>
+  <script>
+    PP.use('home/page/register_create_all');
+  </script>
+</body>
+</html>
