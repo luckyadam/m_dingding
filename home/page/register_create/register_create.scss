@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/*
+ * @author: luckyadam
+ * @time: 2016-1-6
+*/
+
+@import "function";
+html,body {
+  height: 100%;
+}
+.rc_form_p {
+  width: 100%;
+  padding: 0 rem(24px);
+  box-sizing: border-box;
+  margin-top: rem(30px);
+}
+
+.rc_form_vcode {
+  flex: 1;
+}
+.rc_form_vcode_btn {
+  display: block;
+  width: rem(240px);
+  height: rem(90px);
+  border: 0;
+  background-color: rgba(0,0,0,.6);
+  color: #999;
+  font-size: rem(28px);
+}
+.rc_form_confirm {
+  font-size: rem(24px);
+  color: #fff;
+}
+.rc_form_confirm_checkbox {
+  display: inline-block;
+  width: rem(24px);
+  height: rem(24px);
+  background-color: #f79f42;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-right: rem(15px);
+}
+.rc_form_confirm_checkbox.checked {
+  position: relative;
+}
+.rc_form_confirm_checkbox.checked:after {
+  content: '';
+  position: absolute;
+  width: rem(12px);
+  height: rem(6px);
+  border-right: 2px solid #4b403b;
+  border-top: 2px solid #4b403b;
+  top: 50%;
+  left: 50%;
+  margin: rem(-5px) 0 0 rem(-2px);
+  transform: rotate(135deg);
+  transform-origin: 33.33% 33.33%;
+}
+.rc_form_confirm_txt {
+  display: inline-block;
+  vertical-align: middle;
+}
+.rc_form_btns {
+  margin-top: rem(226px);
+  padding-bottom: rem(40px);
+}

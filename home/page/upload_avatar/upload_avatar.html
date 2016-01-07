@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
-  <title>创建账户全民叮叮</title>
+  <title>上传头像</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -19,42 +19,36 @@
 </head>
 <!-- 注：加ontouchstart使css：active生效 -->
 <body ontouchstart>
-  <div class="mod_container rca">
-    <div class="rca_bg"></div>
-    <%= widget.load('header', { title: '创建账户' }, 'gb') %>
-    <%= widget.load('nav_line', { position: 1, splits: 4 }) %>
-    <div class="rca_form">
-      <p class="rca_form_p">
-        <input type="text" class="rca_form_text" placeholder="电子邮箱" >
+  <%= widget.load('common_style') %>
+  <!-- 全民叮叮使用class register_all，专业导游使用 register_professional -->
+  <div class="mod_container upload register_all">
+    <div class="register_bg"></div>
+    <%= widget.load('header', { title: '上传头像' }, 'gb') %>
+    <%= widget.load('nav_line', { position: 3, splits: 5 }) %>
+    <div class="upload_form">
+      <p class="upload_form_p upload_form_avatar">
+        <img src="../images/avatar_default.png" class="upload_form_avatar_img" >
       </p>
-      <p class="rca_form_p">
-        <input type="text" class="rca_form_text" placeholder="手机号" >
+      <p class="upload_form_p upload_form_tip">
+        上传清晰、真实的头像有助于您更快的<br >通过审核！
       </p>
-      <p class="rca_form_p display_flex">
-        <input type="text" class="rca_form_text rca_form_vcode" placeholder="验证码" ><button class="rca_form_vcode_btn">获取验证码</button>
+      <p class="upload_form_p">
+        <a href="javascript:;" class="register_form_btn upload_form_choose">从相册选择</a>
+        <input type="file" class="upload_form_file" >
       </p>
-      <p class="rca_form_p">
-        <input type="password" class="rca_form_text" placeholder="密码" >
+      <p class="upload_form_p">
+        <a href="javascript:;" class="register_form_btn upload_form_shoot">拍摄照片</a>
+        <input type="file" class="upload_form_file" >
       </p>
-      <p class="rca_form_p">
-        <input type="password" class="rca_form_text" placeholder="再次输入密码" >
-      </p>
-      <p class="rca_form_p rca_form_confirm">
-        <span class="rca_form_confirm_checkbox"></span><span class="rca_form_confirm_txt">同意“叮叮导游”的全民叮叮服务条款及隐私条款书</span>
-      </p>
-      <p class="rca_form_p rca_form_btns display_flex">
-        <a href="#" class="rca_form_btn rca_form_prev">上一步</a><a href="#" class="rca_form_btn rca_form_next">下一步</a>
+      <p class="upload_form_p upload_form_btns display_flex">
+        <a href="#" class="register_form_btn register_form_prev">上一步</a><a href="#" class="register_form_btn register_form_next">下一步</a>
       </p>
     </div>
   </div>
 
   <!-- global:js -->
-  <%= getJS('lib.js', 'gb') %>
   <!-- endglobal -->
 
   <%= getJS() %>
-  <script>
-    PP.use('home/page/register_create_all');
-  </script>
 </body>
 </html>

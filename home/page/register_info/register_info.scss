@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/*
+ * @author: luckyadam
+ * @time: 2016-1-7
+*/
+
+@import "function";
+
+html,body {
+  height: 100%;
+}
+.ri {
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+}
+.ri_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: url(../images/all_bg.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: -10;
+}
+
+.ri_form_p {
+  width: 100%;
+  padding: 0 rem(24px);
+  box-sizing: border-box;
+  margin-top: rem(30px);
+}
+.register_form_text {
+  flex: 1;
+}
+.ri_form_select {
+  flex: 1;
+  display: block;
+  width: 100%;
+  height: rem(90px);
+  outline: 0;
+  background-color: rgba(0,0,0,.3);
+  font-size: rem(28px);
+  color: #999;
+  box-sizing: border-box;
+  padding: rem(28px);
+  position: relative;
+}
+.ri_form_select:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: rem(16px) solid #999;
+  border-left: rem(16px) solid transparent;
+  position: absolute;
+  bottom: rem(10px);
+  right: rem(10px);
+}
+.ri_name,.ri_education,.ri_wx {
+  margin-right: rem(16px);
+}
+.ri_form_btns {
+  margin-top: rem(48px);
+  padding-bottom: rem(40px);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>补全信息</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- global:css -->
+  <%= getCSS('gb.css', 'gb') %>
+  <!-- endglobal -->
+
+  <%= getCSS() %>
+  <script>
+    (function(l,s,c){var p=document;var r=p.documentElement;var j=window;var h="addEventListener";var o="getBoundingClientRect";var m="pageshow";var e=p.head||p.getElementsByTagName("HEAD")[0];var n=p.createElement("STYLE");var q;var a="text-size-adjust:100%;";var f="-webkit-"+a+"-moz-"+a+"-ms-"+a+"-o-"+a+a;var k=o in r;var g=null;function b(){var d=Math.min((k?r[o]().width:j.innerWidth)/(l/s),c);if(d!=g){n.innerHTML="html{"+"font-size:"+d+"px!important;"+f+"}";g=d}}function i(){clearTimeout(q);q=setTimeout(b,300)}l=l||320;s=s||16;c=c||32;e.appendChild(n);p[h]("DOMContentLoaded",b,false);if("on"+m in j){j[h](m,function(d){if(d.persisted){i()}},false)}else{j[h]("load",i,false)}j[h]("resize",i,false);b()})(640,32,32);
+  </script>
+</head>
+<!-- 注：加ontouchstart使css：active生效 -->
+<body ontouchstart>
+  <%= widget.load('common_style') %>
+  <!-- 全民叮叮使用class register_all，专业导游使用 register_professional -->
+  <div class="mod_container ri register_all">
+    <div class="register_bg"></div>
+    <%= widget.load('header', { title: '补全信息' }, 'gb') %>
+    <%= widget.load('nav_line', { position: 2, splits: 5 }) %>
+    <div class="ri_form">
+      <p class="ri_form_p display_flex">
+        <input type="text" class="register_form_text ri_name" placeholder="姓名" >
+        <a href="javascript:;" class="ri_form_select ri_sexual">性别</a>
+      </p>
+      <p class="ri_form_p display_flex">
+        <input type="text" class="register_form_text ri_id" placeholder="身份证号" >
+      </p>
+      <p class="ri_form_p display_flex">
+        <a href="javascript:;" class="ri_form_select ri_education">学历</a>
+        <a href="javascript:;" class="ri_form_select ri_language">掌握语种</a>
+      </p>
+      <p class="ri_form_p display_flex">
+        <a href="javascript:;" class="ri_form_select ri_address">居住城市</a>
+      </p>
+      <p class="ri_form_p display_flex">
+        <input type="text" class="register_form_text ri_wx" placeholder="微信号" >
+        <a href="javascript:;" class="ri_form_select ri_car">是否有车</a>
+      </p>
+      <p class="ri_form_p display_flex">
+        <input type="text" class="register_form_text ri_alipay" placeholder="支付宝账号" >
+        <input type="text" class="register_form_text ri_alipayname" placeholder="支付宝所属人名称" >
+      </p>
+      <p class="ri_form_p display_flex">
+        <input type="text" class="register_form_text ri_work" placeholder="工作职位" >
+      </p>
+      <!-- 专业导游需要的项 S -->
+      <!-- <p class="ri_form_p display_flex">
+        <input type="text" class="register_form_text ri_guidesid" placeholder="导游证号 A-0000-000000(字母大写)" >
+      </p>
+      <p class="ri_form_p display_flex">
+        <a href="javascript:;" class="ri_form_select ri_guidelv">导游级别</a>
+        <a href="javascript:;" class="ri_form_select ri_gettime">领证时间</a>
+      </p> -->
+      <!-- 专业导游需要的项 E -->
+      <p class="ri_form_p ri_form_btns display_flex">
+        <a href="#" class="register_form_btn register_form_prev">上一步</a><a href="#" class="register_form_btn register_form_next">下一步</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- global:js -->
+  <!-- endglobal -->
+
+  <%= getJS() %>
+</body>
+</html>

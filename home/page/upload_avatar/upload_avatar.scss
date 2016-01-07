@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/*
+ * @author: luckyadam
+ * @time: 2016-1-7
+*/
+@import "function";
+
+.upload_form_p {
+  width: 100%;
+  padding: 0 rem(24px);
+  box-sizing: border-box;
+  margin-top: rem(30px);
+  text-align: center;
+  position: relative;
+}
+.upload_form_avatar {
+  padding-top: rem(92px);
+  padding-bottom: rem(46px);
+}
+.upload_form_avatar_img {
+  width: rem(200px);
+  height: rem(200px);
+  display: inline-block;
+}
+.upload_form_tip {
+  font-size: rem(28px);
+  color: #fff;
+  padding-bottom: rem(30px);
+}
+.upload_form_choose,.upload_form_shoot {
+  color: #fff;
+  border: rem(2px) solid #999999;
+  background-color: rgba(0,0,0,.5);
+}
+.upload_form_file {
+  position: absolute;
+  width: 100%;
+  height: rem(80px);
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.upload_form_btns {
+  margin-top: rem(176px);
+  padding-bottom: rem(40px);
+}
