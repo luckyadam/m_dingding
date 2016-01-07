@@ -10,11 +10,12 @@
 
   <!-- global:css -->
   <%= getCSS('gb.css', 'gb') %>
+  <%= getCSS('ui.css', 'gb') %>
   <!-- endglobal -->
 
   <%= getCSS() %>
   <script>
-    (function(l,s,c){var p=document;var r=p.documentElement;var j=window;var h="addEventListener";var o="getBoundingClientRect";var m="pageshow";var e=p.head||p.getElementsByTagName("HEAD")[0];var n=p.createElement("STYLE");var q;var a="text-size-adjust:100%;";var f="-webkit-"+a+"-moz-"+a+"-ms-"+a+"-o-"+a+a;var k=o in r;var g=null;function b(){var d=Math.min((k?r[o]().width:j.innerWidth)/(l/s),c);if(d!=g){n.innerHTML="html{"+"font-size:"+d+"px!important;"+f+"}";g=d}}function i(){clearTimeout(q);q=setTimeout(b,300)}l=l||320;s=s||16;c=c||32;e.appendChild(n);p[h]("DOMContentLoaded",b,false);if("on"+m in j){j[h](m,function(d){if(d.persisted){i()}},false)}else{j[h]("load",i,false)}j[h]("resize",i,false);b()})(640,32,32);
+    (function(l,s,c){var p=document;var r=p.documentElement;var j=window;var h="addEventListener";var o="getBoundingClientRect";var m="pageshow";var e=p.head||p.getElementsByTagName("HEAD")[0];var n=p.createElement("STYLE");var q;var a="text-size-adjust:100%;";var f="-webkit-"+a+"-moz-"+a+"-ms-"+a+"-o-"+a+a;var k=o in r;var g=null;function b(){var d=Math.min((k?r[o]().width:j.innerWidth)/(l/s),c);if(d!=g){n.innerHTML="html{"+"font-size:"+d+"px!important;"+f+"}";g=d}}function i(){clearTimeout(q);q=setTimeout(b,100)}l=l||320;s=s||16;c=c||32;e.appendChild(n);p[h]("DOMContentLoaded",b,false);if("on"+m in j){j[h](m,function(d){if(d.persisted){i()}},false)}else{j[h]("load",i,false)}j[h]("resize",i,false);b()})(640,32,32);
   </script>
 </head>
 <!-- 注：加ontouchstart使css：active生效 -->
@@ -51,9 +52,12 @@
       <p class="ri_form_p display_flex">
         <input type="text" class="register_form_text ri_work" placeholder="工作职位" >
       </p>
+      <p class="ri_form_p display_flex">
+        <a href="javascript:;" class="ri_form_select ri_guidesid">导游证号 A-0000-000000(字母大写)</a>
+      </p>
       <!-- 专业导游需要的项 S -->
       <!-- <p class="ri_form_p display_flex">
-        <input type="text" class="register_form_text ri_guidesid" placeholder="导游证号 A-0000-000000(字母大写)" >
+        <a href="javascript:;" class="ri_form_select ri_guidesid">导游证号 A-0000-000000(字母大写)</a>
       </p>
       <p class="ri_form_p display_flex">
         <a href="javascript:;" class="ri_form_select ri_guidelv">导游级别</a>
@@ -67,8 +71,18 @@
   </div>
 
   <!-- global:js -->
+  <%= getJS('lib.js') %>
+  <%= getJS('ui.js') %>
+  <%= getJS('iscroll-lite.js') %>
   <!-- endglobal -->
 
   <%= getJS() %>
+  <script>
+    PP.use('home/page/register_info', function (RegisterInfo) {
+      var registerInfo = new RegisterInfo({
+        $el: $('.ri')
+      });
+    });
+  </script>
 </body>
 </html>

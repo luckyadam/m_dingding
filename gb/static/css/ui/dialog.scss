@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@import "function";
+.dialog {
+  width: rem(440px);
+  background-color: #fff;
+  z-index: 101;
+  position: relative;
+  padding: 0 rem(28px);
+}
+
+.dialog .dialog_title {
+  padding: rem(28px) 0;
+  color: #444444;
+  font-size: rem(32px);
+}
+
+.dialog .dialog_content,.dialog_message {
+  color: #666;
+  font-size: rem(28px);
+}
+
+.dialog_btn_container {
+  text-align: right;
+  padding: rem(16px) 0;
+}
+
+.dialog .dialog_btn {
+  display: inline-block;
+  vertical-align: text-top;
+  font-size: rem(24px);
+  color: #777;
+  padding: rem(16px) rem(38px);
+  background-color: #fff;
+  border: 0;
+}
+.dialog .dialog_btn[disabled] {
+  color: #ccc;
+}
+.dialog .dialog_btn.default {
+  color: #f79f42;
+}

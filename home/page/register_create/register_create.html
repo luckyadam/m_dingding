@@ -14,7 +14,7 @@
 
   <%= getCSS() %>
   <script>
-    (function(l,s,c){var p=document;var r=p.documentElement;var j=window;var h="addEventListener";var o="getBoundingClientRect";var m="pageshow";var e=p.head||p.getElementsByTagName("HEAD")[0];var n=p.createElement("STYLE");var q;var a="text-size-adjust:100%;";var f="-webkit-"+a+"-moz-"+a+"-ms-"+a+"-o-"+a+a;var k=o in r;var g=null;function b(){var d=Math.min((k?r[o]().width:j.innerWidth)/(l/s),c);if(d!=g){n.innerHTML="html{"+"font-size:"+d+"px!important;"+f+"}";g=d}}function i(){clearTimeout(q);q=setTimeout(b,300)}l=l||320;s=s||16;c=c||32;e.appendChild(n);p[h]("DOMContentLoaded",b,false);if("on"+m in j){j[h](m,function(d){if(d.persisted){i()}},false)}else{j[h]("load",i,false)}j[h]("resize",i,false);b()})(640,32,32);
+    (function(l,s,c){var p=document;var r=p.documentElement;var j=window;var h="addEventListener";var o="getBoundingClientRect";var m="pageshow";var e=p.head||p.getElementsByTagName("HEAD")[0];var n=p.createElement("STYLE");var q;var a="text-size-adjust:100%;";var f="-webkit-"+a+"-moz-"+a+"-ms-"+a+"-o-"+a+a;var k=o in r;var g=null;function b(){var d=Math.min((k?r[o]().width:j.innerWidth)/(l/s),c);if(d!=g){n.innerHTML="html{"+"font-size:"+d+"px!important;"+f+"}";g=d}}function i(){clearTimeout(q);q=setTimeout(b,100)}l=l||320;s=s||16;c=c||32;e.appendChild(n);p[h]("DOMContentLoaded",b,false);if("on"+m in j){j[h](m,function(d){if(d.persisted){i()}},false)}else{j[h]("load",i,false)}j[h]("resize",i,false);b()})(640,32,32);
   </script>
 </head>
 <!-- 注：加ontouchstart使css：active生效 -->
@@ -27,7 +27,7 @@
     <%= widget.load('nav_line', { position: 1, splits: 5 }) %>
     <div class="rc_form">
       <p class="rc_form_p">
-        <input type="text" class="register_form_text" placeholder="电子邮箱" >
+        <input type="text" class="register_form_text error" placeholder="电子邮箱" >
       </p>
       <p class="rc_form_p">
         <input type="text" class="register_form_text" placeholder="手机号" >

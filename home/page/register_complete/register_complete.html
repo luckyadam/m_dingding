@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
-  <title>上传头像</title>
+  <title>完成注册</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -21,28 +21,20 @@
 <body ontouchstart>
   <%= widget.load('common_style') %>
   <!-- 全民叮叮使用class register_all，专业导游使用 register_professional -->
-  <div class="mod_container upload register_all">
-    <div class="register_bg"></div>
-    <%= widget.load('header', { title: '上传头像' }, 'gb') %>
-    <%= widget.load('nav_line', { position: 3, splits: 5 }) %>
-    <div class="upload_form">
-      <p class="upload_form_p upload_form_avatar">
-        <img src="../images/avatar_default.png" class="upload_form_avatar_img" >
-      </p>
-      <p class="upload_form_p upload_form_tip">
-        上传清晰、真实的头像有助于您更快的<br >通过审核！
-      </p>
-      <p class="upload_form_p">
-        <a href="javascript:;" class="register_form_btn upload_form_choose">从相册选择</a>
-        <input type="file" class="upload_form_file" >
-      </p>
-      <p class="upload_form_p">
-        <a href="javascript:;" class="register_form_btn upload_form_shoot">拍摄照片</a>
-        <input type="file" class="upload_form_file" >
-      </p>
-      <p class="upload_form_p upload_form_btns display_flex">
-        <a href="#" class="register_form_btn register_form_prev">上一步</a><a href="#" class="register_form_btn register_form_next">下一步</a>
-      </p>
+  <div class="mod_container complete register_professional">
+    <div class="complete_wrapper display_flex vertical">
+      <%= widget.load('header', { title: '完成注册' }, 'gb') %>
+      <%= widget.load('nav_line', { position: 4, splits: 5 }) %>
+      <div class="complete_main">
+          <div class="complete_slogan">
+            <img src="../images/logo.png" class="complete_slogan_logo" >
+            <p class="complete_slogan_txt1">您已完成叮叮导游的注册！</p>
+            <p class="complete_slogan_txt2">客服正在审核您的资料，审核结果会发短信通知您！</p>
+          </div>
+          <div class="complete_main_btn">
+            <a href="javascript:;" class="register_form_btn complete_main_start">开启叮叮之旅</a>
+          </div>
+      </div>
     </div>
   </div>
 

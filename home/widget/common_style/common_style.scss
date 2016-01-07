@@ -16,7 +16,9 @@
 .register_all .register_bg {
   background-image: url(../images/all_bg.jpg);
 }
-
+.register_professional .register_bg {
+  background-image: url(../images/professional_bg.jpg);
+}
 .register_form_btn {
   display: block;
   width: 100%;
@@ -53,4 +55,9 @@
   box-sizing: border-box;
   padding: rem(28px);
   border-radius: 0;
+  line-height: rem(34px);
+}
+
+.register_form_text.error {
+  border-right: rem(4px) solid #fc2a2a;
 }

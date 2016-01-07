@@ -43,6 +43,7 @@ html,body {
   color: #999;
   box-sizing: border-box;
   padding: rem(28px);
+  line-height: rem(34px);
   position: relative;
 }
 .ri_form_select:after {
@@ -62,4 +63,99 @@ html,body {
 .ri_form_btns {
   margin-top: rem(48px);
   padding-bottom: rem(40px);
+}
+
+.sexual_select_item {
+  display: block;
+  width: 100%;
+  padding: rem(28px) rem(48px);
+  font-size: rem(28px);
+  color: #444444;
+  box-sizing: border-box;
+}
+.sexual_select_male {
+  border-bottom: 1px solid #eeeeee;
+}
+.select_list_choose {
+  display: block;
+  width: 100%;
+  padding: rem(24px) rem(48px);
+  font-size: rem(28px);
+  color: #444444;
+  box-sizing: border-box;
+}
+.select_list_item {
+  border-bottom: 1px solid #eeeeee;
+}
+.select_list_item:last-child {
+  border: 0;
+}
+.select_list_choose.choosed {
+  position: relative;
+  color: #f79f42;
+}
+.select_list_choose.choosed:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: rem(26px);
+  height: rem(10px);
+  border-left: rem(4px) solid #f79f42;
+  border-bottom: rem(4px) solid #f79f42;
+  transform: rotate(-45deg);
+  top: 50%;
+  right: 0;
+  margin-top: rem(-8px);
+}
+.language_select {
+  height: rem(460px);
+  overflow:hidden;
+}
+.car_list_item.display_flex,.car_list_choose {
+  padding: rem(22px);
+}
+.car_list_item>span{
+  display: block;
+}
+.select_input {
+  display: block;
+  border: 0;
+  border-bottom: rem(4px) solid #f79f42;
+  color: #999999;
+  padding: 0 rem(20px) rem(20px) rem(20px);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: rem(28px);
+  border-radius: 0;
+}
+.car_list_item_carnum {
+  flex: 1;
+  width: 100%;
+  margin-right: rem(20px);
+  margin-left: rem(20px);
+}
+
+.car_list_item_carseats {
+  width: rem(74px);
+  margin-right: rem(20px);
+}
+.car_select {
+  padding-bottom: rem(62px);
+}
+.input_guidesid {
+  padding: rem(20px) rem(20px) rem(40px) rem(20px);
+}
+.input_guidesid_first {
+  width: rem(70px);
+  margin-right: rem(14px);
+}
+.input_guidesid_second {
+  width: rem(108px);
+  margin-left: rem(14px);
+  margin-right: rem(14px);
+}
+.input_guidesid_third {
+  flex: 1;
+  width: 100%;
+  margin-left: rem(14px);
 }

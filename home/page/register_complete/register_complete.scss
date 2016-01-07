@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/*
+ * @author: luckyadam
+ * @time: 2016-1-7
+*/
+
+@import "function";
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+.complete {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.complete_main {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.complete.register_all {
+  background-image: url(../images/all_bg.jpg);
+}
+.complete.register_professional {
+  background-image: url(../images/professional_bg.jpg);
+}
+.complete_wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+}
+.complete_slogan {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: rem(120px);
+}
+.complete_slogan_logo {
+  display: inline-block;
+  width: rem(120px);
+  height: rem(142px);
+  margin-bottom: rem(92px);
+}
+.complete_slogan_txt1 {
+  font-size: rem(36px);
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: rem(20px);
+}
+.complete_slogan_txt2 {
+  font-size: rem(24px);
+  font-weight: 400;
+  color: #fff;
+}
+.complete_main_btn {
+  position: absolute;
+  bottom: rem(40px);
+  right: 0;
+  width: 100%;
+  padding: 0 rem(24px);
+  box-sizing: border-box;
+}
+.complete_main_start {
+  color: #fff;
+  background-color: #f79f42;
+  border: rem(2px) solid #f79f42;
+}

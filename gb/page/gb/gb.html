@@ -11,7 +11,7 @@
   <!-- S 引用前端页面片 -->
   <!--#include virtual="/sinclude/cssi/fd/h5/m_dingding/gb/gb.shtml" -->
   <!-- E 引用前端页面片 -->
-
+  <%= getCSS('ui.css') %>
   <%= getCSS() %>
 
 </head>
@@ -22,6 +22,8 @@
     <%= widget.load('header', { title: '测试' }) %>
   </div>
   <%= getJS('lib.js') %>
+  <%= getJS('ui.js') %>
+  <%= getJS('iscroll-lite.js') %>
   <%= getJS() %>
 </body>
 </html>
