@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <title>注册登录</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- global:css -->
+  <link rel="stylesheet" type="text/css" href="../gb/css/gb.css" combo-use="/gb/css/gb.min_21e8a419.css">
+  <!-- endglobal -->
+
+  <link rel="stylesheet" type="text/css" href="css/register_login.css" combo-use="/home/css/register_login.min_2a20c1fd.css">
+  <script>
+    (function(l, s, c) {
+      var p = document;
+      var r = p.documentElement;
+      var j = window;
+      var h = "addEventListener";
+      var o = "getBoundingClientRect";
+      var m = "pageshow";
+      var e = p.head || p.getElementsByTagName("HEAD")[0];
+      var n = p.createElement("STYLE");
+      var q;
+      var a = "text-size-adjust:100%;";
+      var f = "-webkit-" + a + "-moz-" + a + "-ms-" + a + "-o-" + a + a;
+      var k = o in r;
+      var g = null;
+
+      function b() {
+        var d = Math.min((k ? r[o]().width : j.innerWidth) / (l / s), c);
+        if (d != g) {
+          n.innerHTML = "html{" + "font-size:" + d + "px!important;" + f + "}";
+          g = d
+        }
+      }
+
+      function i() {
+        clearTimeout(q);
+        q = setTimeout(b, 100)
+      }
+      l = l || 320;
+      s = s || 16;
+      c = c || 32;
+      e.appendChild(n);
+      p[h]("DOMContentLoaded", b, false);
+      if ("on" + m in j) {
+        j[h](m, function(d) {
+          if (d.persisted) {
+            i()
+          }
+        }, false)
+      } else {
+        j[h]("load", i, false)
+      }
+      j[h]("resize", i, false);
+      b()
+    })(640, 32, 32);
+  </script>
+</head>
+<!-- 注：加ontouchstart使css：active生效 -->
+
+<body ontouchstart>
+
+  <div class="mod_container lr">
+    <div class="lr_slogan">
+      <img src="../gb/images/logo.png" class="lr_slogan_logo">
+      <p class="lr_slogan_txt">带给你真正说走就走的旅行</p>
+    </div>
+    <div class="lr_btns display_flex">
+      <a href="#" class="lr_btn">注册</a>
+      <a href="#" class="lr_btn">登录</a>
+    </div>
+  </div>
+
+  <!-- global:js -->
+  <!-- endglobal -->
+
+  <script src="js/register_login.js"></script>
+
+</body>
+
+</html>

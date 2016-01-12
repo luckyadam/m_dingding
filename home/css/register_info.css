@@ -1,0 +1,282 @@
+/*
+ * @author: luckyadam
+ * @time: 2016-1-7
+*/
+html, body {
+  height: 100%;
+}
+
+.ri {
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.ri_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: url(../images/all_bg.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: -10;
+}
+
+.ri_form_p {
+  width: 100%;
+  padding: 0 0.75rem;
+  box-sizing: border-box;
+  margin-top: 0.9375rem;
+}
+
+.register_form_text {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.ri_form_select {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+  width: 100%;
+  height: 2.8125rem;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 0.875rem;
+  color: #999;
+  box-sizing: border-box;
+  padding: 0.875rem;
+  line-height: 1.0625rem;
+  position: relative;
+}
+
+.ri_form_select:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 0.5rem solid #999;
+  border-left: 0.5rem solid transparent;
+  position: absolute;
+  bottom: 0.3125rem;
+  right: 0.3125rem;
+}
+
+.ri_name, .ri_education, .ri_wx {
+  margin-right: 0.5rem;
+}
+
+.ri_form_btns {
+  margin-top: 1.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.sexual_select_item {
+  display: block;
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  font-size: 0.875rem;
+  color: #444444;
+  box-sizing: border-box;
+}
+
+.sexual_select_male {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.select_list_choose {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  color: #444444;
+  box-sizing: border-box;
+}
+
+.select_list_item {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.select_list_item:last-child {
+  border: 0;
+}
+
+.select_list_choose.choosed {
+  position: relative;
+  color: #f79f42;
+}
+
+.select_list_choose.choosed:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 0.8125rem;
+  height: 0.3125rem;
+  border-left: 0.125rem solid #f79f42;
+  border-bottom: 0.125rem solid #f79f42;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 50%;
+  right: 0;
+  margin-top: -0.25rem;
+}
+
+.language_select {
+  height: 14.375rem;
+  overflow: hidden;
+}
+
+.car_list_item.display_flex, .car_list_choose {
+  padding: 0.6875rem;
+}
+
+.car_list_item > span {
+  display: block;
+}
+
+.select_input {
+  display: block;
+  border: 0;
+  border-bottom: 0.125rem solid #f79f42;
+  color: #999999;
+  padding: 0 0.625rem 0.625rem 0.625rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 0.875rem;
+  border-radius: 0;
+}
+
+.car_list_item_carnum {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
+}
+
+.car_list_item_carseats {
+  width: 2.3125rem;
+  margin-right: 0.625rem;
+}
+
+.car_select {
+  padding-bottom: 1.9375rem;
+}
+
+.input_guidesid {
+  padding: 0.625rem 0.625rem 1.25rem 0.625rem;
+}
+
+.input_guidesid_first {
+  width: 2.1875rem;
+  margin-right: 0.4375rem;
+}
+
+.input_guidesid_second {
+  width: 3.375rem;
+  margin-left: 0.4375rem;
+  margin-right: 0.4375rem;
+}
+
+.input_guidesid_third {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  margin-left: 0.4375rem;
+}
+
+.register_all, .register_professional {
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.register_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.register_all .register_bg {
+  background-image: url(../images/all_bg.jpg);
+}
+
+.register_professional .register_bg {
+  background-image: url(../images/professional_bg.jpg);
+}
+
+.register_form_btn {
+  display: block;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  height: 2.5rem;
+  box-sizing: border-box;
+  font-size: 0.9375rem;
+  line-height: 2.375rem;
+  outline: 0;
+}
+
+.register_form_prev {
+  margin-right: 0.5rem;
+  color: #999999;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0.0625rem solid #999999;
+}
+
+.register_form_next {
+  color: #fff;
+  background-color: #f79f42;
+  border: 0.0625rem solid #f79f42;
+}
+
+.register_form_text {
+  display: block;
+  width: 100%;
+  height: 2.8125rem;
+  border: none;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 0.875rem;
+  color: #999;
+  box-sizing: border-box;
+  padding: 0.875rem;
+  border-radius: 0;
+  line-height: 1.0625rem;
+}
+
+.register_form_text.error {
+  border-right: 0.125rem solid #fc2a2a;
+}
+
+.nav_line {
+  width: 100%;
+  height: 0.125rem;
+  background-color: #999999;
+  z-index: 100;
+}
+
+.nav_line_split {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav_line_split.active {
+  background-color: #f79f42;
+}

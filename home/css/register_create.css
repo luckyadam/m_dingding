@@ -1,0 +1,167 @@
+/*
+ * @author: luckyadam
+ * @time: 2016-1-6
+*/
+html, body {
+  height: 100%;
+}
+
+.rc_form_p {
+  width: 100%;
+  padding: 0 0.75rem;
+  box-sizing: border-box;
+  margin-top: 0.9375rem;
+}
+
+.rc_form_vcode {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.rc_form_vcode_btn {
+  display: block;
+  width: 7.5rem;
+  height: 2.8125rem;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #999;
+  font-size: 0.875rem;
+}
+
+.rc_form_confirm {
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+.rc_form_confirm_checkbox {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #f79f42;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-right: 0.4688rem;
+}
+
+.rc_form_confirm_checkbox.checked {
+  position: relative;
+}
+
+.rc_form_confirm_checkbox.checked:after {
+  content: '';
+  position: absolute;
+  width: 0.375rem;
+  height: 0.1875rem;
+  border-right: 2px solid #4b403b;
+  border-top: 2px solid #4b403b;
+  top: 50%;
+  left: 50%;
+  margin: -0.1562rem 0 0 -0.0625rem;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-transform-origin: 33.33% 33.33%;
+      -ms-transform-origin: 33.33% 33.33%;
+          transform-origin: 33.33% 33.33%;
+}
+
+.rc_form_confirm_txt {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rc_form_btns {
+  margin-top: 7.0625rem;
+  padding-bottom: 1.25rem;
+}
+
+.register_all, .register_professional {
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.register_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.register_all .register_bg {
+  background-image: url(../images/all_bg.jpg);
+}
+
+.register_professional .register_bg {
+  background-image: url(../images/professional_bg.jpg);
+}
+
+.register_form_btn {
+  display: block;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  height: 2.5rem;
+  box-sizing: border-box;
+  font-size: 0.9375rem;
+  line-height: 2.375rem;
+  outline: 0;
+}
+
+.register_form_prev {
+  margin-right: 0.5rem;
+  color: #999999;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0.0625rem solid #999999;
+}
+
+.register_form_next {
+  color: #fff;
+  background-color: #f79f42;
+  border: 0.0625rem solid #f79f42;
+}
+
+.register_form_text {
+  display: block;
+  width: 100%;
+  height: 2.8125rem;
+  border: none;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 0.875rem;
+  color: #999;
+  box-sizing: border-box;
+  padding: 0.875rem;
+  border-radius: 0;
+  line-height: 1.0625rem;
+}
+
+.register_form_text.error {
+  border-right: 0.125rem solid #fc2a2a;
+}
+
+.nav_line {
+  width: 100%;
+  height: 0.125rem;
+  background-color: #999999;
+  z-index: 100;
+}
+
+.nav_line_split {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav_line_split.active {
+  background-color: #f79f42;
+}

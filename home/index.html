@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <title>首页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- global:css -->
+  <link rel="stylesheet" type="text/css" href="../gb/css/gb.css" combo-use="/gb/css/gb.min_21e8a419.css">
+  <!-- endglobal -->
+
+  <link rel="stylesheet" type="text/css" href="css/index.css" combo-use="/home/css/index.min_d1c8b033.css">
+  <script>
+    (function(l, s, c) {
+      var p = document;
+      var r = p.documentElement;
+      var j = window;
+      var h = "addEventListener";
+      var o = "getBoundingClientRect";
+      var m = "pageshow";
+      var e = p.head || p.getElementsByTagName("HEAD")[0];
+      var n = p.createElement("STYLE");
+      var q;
+      var a = "text-size-adjust:100%;";
+      var f = "-webkit-" + a + "-moz-" + a + "-ms-" + a + "-o-" + a + a;
+      var k = o in r;
+      var g = null;
+
+      function b() {
+        var d = Math.min((k ? r[o]().width : j.innerWidth) / (l / s), c);
+        if (d != g) {
+          n.innerHTML = "html{" + "font-size:" + d + "px!important;" + f + "}";
+          g = d
+        }
+      }
+
+      function i() {
+        clearTimeout(q);
+        q = setTimeout(b, 100)
+      }
+      l = l || 320;
+      s = s || 16;
+      c = c || 32;
+      e.appendChild(n);
+      p[h]("DOMContentLoaded", b, false);
+      if ("on" + m in j) {
+        j[h](m, function(d) {
+          if (d.persisted) {
+            i()
+          }
+        }, false)
+      } else {
+        j[h]("load", i, false)
+      }
+      j[h]("resize", i, false);
+      b()
+    })(640, 32, 32);
+  </script>
+</head>
+<!-- 注：加ontouchstart使css：active生效 -->
+
+<body ontouchstart>
+
+  <div class="mod_container index tab">
+    <div class="tab_head j_tab_head index_header">
+      <!-- 配置data-hash属性表示如果开启hash的话，hash将是它的值 -->
+      <a href="javascript:;" class="tab_head_item j_tab_head_item" data-hash="tourist">游客版</a>
+      <a href="javascript:;" class="tab_head_item j_tab_head_item" data-hash="guide">导游版</a>
+    </div>
+    <div class="tab_content j_tab_content">
+      <div class="tab_content_item j_tab_content_item index_tourist">
+        <div class="tourist_section tourist_header">
+          <img src="images/tourist_header_bg_1.jpg" class="tourist_section_img tourist_header_img">
+          <div class="tourist_header_dl">
+            <a href="#" class="dl_btn dl_btn_ip tourist_header_dl_ip">iPhone下载</a>
+            <a href="#" class="dl_btn dl_btn_an tourist_header_dl_an">Android下载</a>
+          </div>
+        </div>
+        <div class="tourist_section">
+          <img src="images/tourist_section1.jpg" class="tourist_section_img">
+        </div>
+        <div class="tourist_section">
+          <img src="images/tourist_section2.jpg" class="tourist_section_img">
+        </div>
+        <div class="tourist_section">
+          <img src="images/tourist_section3.jpg" class="tourist_section_img">
+        </div>
+        <div class="tourist_section">
+          <img src="images/tourist_section4.jpg" class="tourist_section_img">
+        </div>
+        <div class="tourist_section tourist_footer">
+          <img src="images/tourist_footer_bg.jpg" class="tourist_section_img tourist_footer_bg">
+          <div class="tourist_footer_main display_flex vertical">
+            <h3 class="tourist_footer_title">叮叮导游游客版</h3>
+            <div class="tourist_footer_dl display_flex vertical">
+              <div class="tourist_footer_dl_main">
+                <a href="#" class="dl_btn dl_btn_ip tourist_footer_dl_ip">iPhone下载</a>
+                <a href="#" class="dl_btn dl_btn_an tourist_footer_dl_an">Android下载</a>
+              </div>
+            </div>
+            <p class="tourist_footer_txt">&copy;深圳欢乐游旅行文化股份有限公司</p>
+            <p class="tourist_footer_txt tourist_footer_id">京ICP证150320号</p>
+          </div>
+        </div>
+      </div>
+      <div class="tab_content_item j_tab_content_item index_guide">
+        <div class="guide_section guide_header">
+          <img src="images/guide_header_bg.jpg" class="guide_section_img guide_header_img">
+          <a href="#" class="apply_btn guide_header_apply">申请成为导游</a>
+        </div>
+        <div class="guide_section">
+          <img src="images/guide_section1.jpg" class="guide_section_img">
+        </div>
+        <div class="guide_section">
+          <img src="images/guide_section2.jpg" class="guide_section_img">
+        </div>
+        <div class="guide_section">
+          <img src="images/guide_section3.jpg" class="guide_section_img">
+        </div>
+        <div class="guide_section">
+          <img src="images/guide_section4.jpg" class="guide_section_img">
+        </div>
+        <div class="guide_section guide_footer">
+          <img src="images/guide_footer_bg.jpg" class="guide_section_img guide_footer_bg">
+          <div class="guide_footer_main display_flex vertical">
+            <h3 class="guide_footer_title">叮叮导游导游版</h3>
+            <div class="guide_footer_apply">
+              <a href="#" class="apply_btn">申请成为导游</a>
+            </div>
+            <p class="guide_footer_txt">&copy;深圳欢乐游旅行文化股份有限公司</p>
+            <p class="guide_footer_txt guide_footer_id">京ICP证150320号</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- global:js -->
+  <script src="../gb/js/lib.js"></script>
+  <!-- includeScriptEndPlaceHolder -->
+  <script src="../gb/js/ui.js"></script>
+  <!-- includeScriptEndPlaceHolder -->
+  <!-- endglobal -->
+
+  <script src="js/index.js"></script>
+
+  <script>
+    PP.use('home/page/index', function(Index) {
+      var index = new Index({
+        $el: $('.index')
+      });
+    });
+  </script>
+</body>
+
+</html>

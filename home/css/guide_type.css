@@ -1,0 +1,105 @@
+/*
+ * @author: luckyadam
+ * @time: 2016-1-5
+*/
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.gt {
+  height: 100%;
+}
+
+.header {
+  background: url(../images/all_header_bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.nav_line {
+  width: 100%;
+  height: 0.125rem;
+  background-color: #999999;
+  z-index: 100;
+}
+
+.nav_line_split {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav_line_split.active {
+  background-color: #f79f42;
+}
+
+.gt_type {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.gt_all {
+  background-image: url(../images/type_all_bg.jpg);
+}
+
+.gt_professional {
+  background-image: url(../images/type_professional_bg.jpg);
+}
+
+.gt_type_main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.gt_type_wrapper {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.gt_type_btn {
+  display: inline-block;
+  width: 10rem;
+  height: 3.3125rem;
+  text-align: center;
+  line-height: 2.4375rem;
+  font-size: 0.9375rem;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0.4375rem 0.5rem;
+  background-color: rgba(8, 1, 3, 0.5);
+  margin-bottom: 0.8125rem;
+}
+
+.gt_type_btn > span {
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.gt_type_txt {
+  font-size: 0.75rem;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <title>完成注册</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- global:css -->
+  <link rel="stylesheet" type="text/css" href="../gb/css/gb.css" combo-use="/gb/css/gb.min_21e8a419.css">
+  <!-- endglobal -->
+
+  <link rel="stylesheet" type="text/css" href="css/register_complete.css" combo-use="/home/css/register_complete.min_c69500d5.css">
+  <script>
+    (function(l, s, c) {
+      var p = document;
+      var r = p.documentElement;
+      var j = window;
+      var h = "addEventListener";
+      var o = "getBoundingClientRect";
+      var m = "pageshow";
+      var e = p.head || p.getElementsByTagName("HEAD")[0];
+      var n = p.createElement("STYLE");
+      var q;
+      var a = "text-size-adjust:100%;";
+      var f = "-webkit-" + a + "-moz-" + a + "-ms-" + a + "-o-" + a + a;
+      var k = o in r;
+      var g = null;
+
+      function b() {
+        var d = Math.min((k ? r[o]().width : j.innerWidth) / (l / s), c);
+        if (d != g) {
+          n.innerHTML = "html{" + "font-size:" + d + "px!important;" + f + "}";
+          g = d
+        }
+      }
+
+      function i() {
+        clearTimeout(q);
+        q = setTimeout(b, 100)
+      }
+      l = l || 320;
+      s = s || 16;
+      c = c || 32;
+      e.appendChild(n);
+      p[h]("DOMContentLoaded", b, false);
+      if ("on" + m in j) {
+        j[h](m, function(d) {
+          if (d.persisted) {
+            i()
+          }
+        }, false)
+      } else {
+        j[h]("load", i, false)
+      }
+      j[h]("resize", i, false);
+      b()
+    })(640, 32, 32);
+  </script>
+</head>
+<!-- 注：加ontouchstart使css：active生效 -->
+
+<body ontouchstart>
+
+  <!-- 全民叮叮使用class register_all ，专业导游使用 register_professional -->
+  <div class="mod_container complete register_all">
+    <div class="complete_wrapper display_flex vertical">
+
+      <header class="header">
+        <h1>完成注册</h1>
+      </header>
+
+      <div class="nav_line display_flex">
+
+        <div class="nav_line_split"></div>
+
+        <div class="nav_line_split"></div>
+
+        <div class="nav_line_split"></div>
+
+        <div class="nav_line_split"></div>
+
+        <div class="nav_line_split active"></div>
+
+      </div>
+
+      <div class="complete_main">
+        <div class="complete_slogan">
+          <img src="../gb/images/logo.png" class="complete_slogan_logo">
+          <p class="complete_slogan_txt1">您已完成叮叮导游的注册！</p>
+          <p class="complete_slogan_txt2">客服正在审核您的资料，审核结果会发短信通知您！</p>
+        </div>
+        <div class="complete_main_btn">
+          <a href="javascript:;" class="register_form_btn complete_main_start">开启叮叮之旅</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- global:js -->
+  <!-- endglobal -->
+
+  <script src="js/register_complete.js"></script>
+
+</body>
+
+</html>

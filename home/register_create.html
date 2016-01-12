@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <title>创建账户</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- global:css -->
+  <link rel="stylesheet" type="text/css" href="../gb/css/gb.css" combo-use="/gb/css/gb.min_21e8a419.css">
+  <!-- endglobal -->
+
+  <link rel="stylesheet" type="text/css" href="css/register_create.css" combo-use="/home/css/register_create.min_d694a3a2.css">
+  <script>
+    (function(l, s, c) {
+      var p = document;
+      var r = p.documentElement;
+      var j = window;
+      var h = "addEventListener";
+      var o = "getBoundingClientRect";
+      var m = "pageshow";
+      var e = p.head || p.getElementsByTagName("HEAD")[0];
+      var n = p.createElement("STYLE");
+      var q;
+      var a = "text-size-adjust:100%;";
+      var f = "-webkit-" + a + "-moz-" + a + "-ms-" + a + "-o-" + a + a;
+      var k = o in r;
+      var g = null;
+
+      function b() {
+        var d = Math.min((k ? r[o]().width : j.innerWidth) / (l / s), c);
+        if (d != g) {
+          n.innerHTML = "html{" + "font-size:" + d + "px!important;" + f + "}";
+          g = d
+        }
+      }
+
+      function i() {
+        clearTimeout(q);
+        q = setTimeout(b, 100)
+      }
+      l = l || 320;
+      s = s || 16;
+      c = c || 32;
+      e.appendChild(n);
+      p[h]("DOMContentLoaded", b, false);
+      if ("on" + m in j) {
+        j[h](m, function(d) {
+          if (d.persisted) {
+            i()
+          }
+        }, false)
+      } else {
+        j[h]("load", i, false)
+      }
+      j[h]("resize", i, false);
+      b()
+    })(640, 32, 32);
+  </script>
+</head>
+<!-- 注：加ontouchstart使css：active生效 -->
+
+<body ontouchstart>
+
+  <!-- 全民叮叮使用class register_all，专业导游使用 register_professional -->
+  <div class="mod_container rc register_all">
+    <div class="register_bg"></div>
+
+    <header class="header">
+      <h1>创建账户</h1>
+    </header>
+
+    <div class="nav_line display_flex">
+
+      <div class="nav_line_split"></div>
+
+      <div class="nav_line_split active"></div>
+
+      <div class="nav_line_split"></div>
+
+      <div class="nav_line_split"></div>
+
+      <div class="nav_line_split"></div>
+
+    </div>
+
+    <div class="rc_form">
+      <p class="rc_form_p">
+        <input type="text" class="register_form_text error" placeholder="电子邮箱">
+      </p>
+      <p class="rc_form_p">
+        <input type="text" class="register_form_text" placeholder="手机号">
+      </p>
+      <p class="rc_form_p display_flex">
+        <input type="text" class="register_form_text rc_form_vcode" placeholder="验证码">
+        <button class="rc_form_vcode_btn">获取验证码</button>
+      </p>
+      <p class="rc_form_p">
+        <input type="password" class="register_form_text" placeholder="密码">
+      </p>
+      <p class="rc_form_p">
+        <input type="password" class="register_form_text" placeholder="再次输入密码">
+      </p>
+      <p class="rc_form_p rc_form_confirm">
+        <span class="rc_form_confirm_checkbox"></span><span class="rc_form_confirm_txt">同意“叮叮导游”的全民叮叮服务条款及隐私条款书</span>
+      </p>
+      <p class="rc_form_p rc_form_btns display_flex">
+        <a href="#" class="register_form_btn register_form_prev">上一步</a><a href="#" class="register_form_btn register_form_next">下一步</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- global:js -->
+  <script src="../gb/js/lib.js"></script>
+  <!-- includeScriptEndPlaceHolder -->
+  <!-- endglobal -->
+
+  <script src="js/register_create.js"></script>
+
+  <script>
+    PP.use('home/page/register_create');
+  </script>
+</body>
+
+</html>

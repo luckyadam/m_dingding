@@ -1,0 +1,1 @@
+"use strict";PP.define("home/page/register_create",function(c){$(".rc_form_confirm").on("click",function(c){$(this).find(".rc_form_confirm_checkbox").toggleClass("checked")})});

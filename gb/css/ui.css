@@ -1,0 +1,122 @@
+.dialog {
+  width: 13.75rem;
+  background-color: #fff;
+  z-index: 101;
+  position: relative;
+  padding: 0 0.875rem;
+}
+
+.dialog .dialog_title {
+  padding: 0.875rem 0;
+  color: #444444;
+  font-size: 1rem;
+}
+
+.dialog .dialog_content, .dialog_message {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.dialog_btn_container {
+  text-align: right;
+  padding: 0.5rem 0;
+}
+
+.dialog .dialog_btn {
+  display: inline-block;
+  vertical-align: text-top;
+  font-size: 0.75rem;
+  color: #777;
+  padding: 0.5rem 1.1875rem;
+  background-color: #fff;
+  border: 0;
+}
+
+.dialog .dialog_btn[disabled] {
+  color: #ccc;
+}
+
+.dialog .dialog_btn.default {
+  color: #f79f42;
+}
+
+@charset "UTF-8";
+/**
+ * 遮罩层的样式
+ */
+
+.overlay_container {
+  position: fixed;
+  z-index: 100003;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 100ms;
+  -webkit-backface-visibility: hidden;
+}
+
+.overlay_container:after,
+.overlay_container:before {
+  content: '';
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.overlay_container.unmask {
+  background: transparent;
+  pointer-events: none;
+}
+
+.overlay_container.before_fade_in {
+  opacity: 0;
+}
+
+.overlay_container.after_fade_out {
+  opacity: 0;
+}
+
+.overlay_content_container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizon;
+  -webkit-flex-flow: row;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.overlay_content_container:after,
+.overlay_content_container:before {
+  content: '';
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.overlay_content {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 150ms;
+  -webkit-transform-origin: 50% 50%;
+  pointer-events: auto;
+}

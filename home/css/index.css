@@ -1,0 +1,292 @@
+@charset "UTF-8";
+/*
+ * @author: luckyadam
+ * @time: 2016-1-11
+*/
+html, body {
+  height: 100%;
+}
+
+.index {
+  min-height: 100%;
+}
+
+/**** 头部 *****/
+.index_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 0.0625rem solid rgba(238, 238, 238, 0.5);
+  z-index: 100;
+}
+
+/**** tab *****/
+.tab_head_item {
+  display: inline-block;
+  width: 5.625rem;
+  height: 2.4375rem;
+  line-height: 2.4375rem;
+  box-sizing: border-box;
+  font-size: 0.75rem;
+  color: #aaaaaa;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tab_head_item.active {
+  color: #fff;
+  position: relative;
+}
+
+.tab_head_item.active:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 2.8125rem;
+  height: 0.125rem;
+  background-color: #fff;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1.4062rem;
+}
+
+.dl_btn {
+  display: block;
+  width: 7.125rem;
+  height: 2.125rem;
+  border: 0.125rem solid #fff;
+  color: #fff;
+  font-size: 0.6875rem;
+  border-radius: 2.125rem;
+  box-sizing: border-box;
+  line-height: 1.875rem;
+  text-align: center;
+  padding-left: 1rem;
+  background-position: 0.5rem 0.25rem;
+  background-repeat: no-repeat;
+  background-size: 1.125rem 1.375rem;
+}
+
+.dl_btn_ip {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAsCAMAAAA6jerHAAAAqFBMVEVMaXH///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8ewE1eAAAAN3RSTlMAI+1e/gEK+gZBUoWgTBXc6R3gxnFGuNPD9XrxZo2nzUOB8A8rrHPWr2o5KCC8yuWRmwKyL36WS67UvAAAASVJREFUGBmlwddSwlAUBdCdXkgChF5C71VU3P//Z+bmIuAMOT64Fv7Dtz7MBLJWStKFqG+TrEHUpDKC5NOjEkPSptJwIKjbzM0MSIbM9QKIMpLnHWTZubt18ZIfNCurwMXNfphdsuEez+YVk0pvNHGAQ79DrWO940erxrt007D50E2gWR7LVRMogUdJhJybUrKcI3elJHKQ800KTj6UkJIdCl8UNKCdKLhCq1EQQrMpCKBREkPzKNhCq1IQQTtSYLoovFHSRMGiZGBAqVNUPUBZU1SLkZvyD0sAhk3ZBrk2ZTFyE4o6DpQjJSEKC4/luripsFRvgRt/zDIr3BkzvtZ28BB4fKWa4FlrwML4Gk6si8nCuo7f6tHMa0wNFPxwlJrjvovCN5CgyCTFncDXAAAAAElFTkSuQmCC);
+}
+
+.dl_btn_an {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAArCAMAAAAniNp/AAAAh1BMVEVMaXH///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8s+2B1AAAALHRSTlMAWqrKHsMH4TPd/KDzFmGl7GxMT4HAinABBGT5VUBH2iPS9xt16AxSaTkpmZj+QbQAAAESSURBVHhe7dRJb4IAEIbhT1RUVhFkqytuXd7///uahqYEOyQ28djnNIf3MIfJ6K/iSp0qlimJ1IkKmdy1q3CVnJPV6WuWLXLGtMZOJNt2T2e/leXs0QEvMZqCe6+69+ZBfrjQuhxyeJmrrxwDWfgThRkwLtWzw3K3vI/lQz17LEf1NFiW+qbJ7SDNbdL7ZiLp1uDVmi4sUyXQbKQZEFQzLDM3AGYSAKeB6ARAGzEZiCbPj/6jAPCuA9HVAwIpB2INRPKBXCprv3AHo6rw61Ktwajn+MiNR1hq9aVx+1KWjuMs28fip/ptBDCVNAUYyfBgtHkkWj0t2gGsJa0BUpnCAMgkZUAQyrZbNL4ryfWbRarOJ01iiv3OWXVPAAAAAElFTkSuQmCC);
+}
+
+.tourist_section {
+  width: 100%;
+}
+
+.tourist_header, .tourist_footer {
+  position: relative;
+}
+
+.tourist_section_img {
+  width: 100%;
+  height: auto;
+}
+
+.tourist_header_dl {
+  position: absolute;
+  right: 2.125rem;
+  bottom: 2rem;
+}
+
+.tourist_header_dl_ip {
+  margin-bottom: 0.875rem;
+}
+
+.tourist_footer_main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.tourist_footer_title {
+  padding: 1.0625rem 0;
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+.tourist_footer_dl {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  box-align: center;
+  flex-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  box-pack: center;
+  flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tourist_footer_dl .dl_btn {
+  margin: 0 auto;
+}
+
+.tourist_footer_dl .tourist_footer_dl_ip {
+  margin-bottom: 0.875rem;
+}
+
+.tourist_footer_txt {
+  font-size: 0.5625rem;
+  color: #bbbbbb;
+}
+
+.tourist_footer_id {
+  padding-bottom: 1.125rem;
+}
+
+/**** 导游版部分 ******/
+.guide_section {
+  width: 100%;
+}
+
+.guide_section_img {
+  width: 100%;
+  height: auto;
+}
+
+.guide_header, .guide_footer {
+  position: relative;
+}
+
+.guide_footer_txt {
+  font-size: 0.5625rem;
+  color: #bbbbbb;
+}
+
+.guide_footer_id {
+  padding-bottom: 1.125rem;
+}
+
+.guide_footer_title {
+  padding: 2.125rem 0 1.875rem;
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+.guide_footer_main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.apply_btn {
+  display: inline-block;
+  width: 7.125rem;
+  height: 2.125rem;
+  border-radius: 2.125rem;
+  background-color: #f79f42;
+  color: #fff;
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 2.125rem;
+}
+
+.guide_header_apply {
+  position: absolute;
+  top: 8.6875rem;
+  left: 50%;
+  margin-left: -3.5625rem;
+}
+
+.guide_footer_apply {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+}
+
+.register_all, .register_professional {
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.register_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.register_all .register_bg {
+  background-image: url(../images/all_bg.jpg);
+}
+
+.register_professional .register_bg {
+  background-image: url(../images/professional_bg.jpg);
+}
+
+.register_form_btn {
+  display: block;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  height: 2.5rem;
+  box-sizing: border-box;
+  font-size: 0.9375rem;
+  line-height: 2.375rem;
+  outline: 0;
+}
+
+.register_form_prev {
+  margin-right: 0.5rem;
+  color: #999999;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0.0625rem solid #999999;
+}
+
+.register_form_next {
+  color: #fff;
+  background-color: #f79f42;
+  border: 0.0625rem solid #f79f42;
+}
+
+.register_form_text {
+  display: block;
+  width: 100%;
+  height: 2.8125rem;
+  border: none;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 0.875rem;
+  color: #999;
+  box-sizing: border-box;
+  padding: 0.875rem;
+  border-radius: 0;
+  line-height: 1.0625rem;
+}
+
+.register_form_text.error {
+  border-right: 0.125rem solid #fc2a2a;
+}

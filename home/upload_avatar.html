@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <title>上传头像</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- global:css -->
+  <link rel="stylesheet" type="text/css" href="../gb/css/gb.css" combo-use="/gb/css/gb.min_21e8a419.css">
+  <!-- endglobal -->
+
+  <link rel="stylesheet" type="text/css" href="css/upload_avatar.css" combo-use="/home/css/upload_avatar.min_aa74b715.css">
+  <script>
+    (function(l, s, c) {
+      var p = document;
+      var r = p.documentElement;
+      var j = window;
+      var h = "addEventListener";
+      var o = "getBoundingClientRect";
+      var m = "pageshow";
+      var e = p.head || p.getElementsByTagName("HEAD")[0];
+      var n = p.createElement("STYLE");
+      var q;
+      var a = "text-size-adjust:100%;";
+      var f = "-webkit-" + a + "-moz-" + a + "-ms-" + a + "-o-" + a + a;
+      var k = o in r;
+      var g = null;
+
+      function b() {
+        var d = Math.min((k ? r[o]().width : j.innerWidth) / (l / s), c);
+        if (d != g) {
+          n.innerHTML = "html{" + "font-size:" + d + "px!important;" + f + "}";
+          g = d
+        }
+      }
+
+      function i() {
+        clearTimeout(q);
+        q = setTimeout(b, 100)
+      }
+      l = l || 320;
+      s = s || 16;
+      c = c || 32;
+      e.appendChild(n);
+      p[h]("DOMContentLoaded", b, false);
+      if ("on" + m in j) {
+        j[h](m, function(d) {
+          if (d.persisted) {
+            i()
+          }
+        }, false)
+      } else {
+        j[h]("load", i, false)
+      }
+      j[h]("resize", i, false);
+      b()
+    })(640, 32, 32);
+  </script>
+</head>
+<!-- 注：加ontouchstart使css：active生效 -->
+
+<body ontouchstart>
+
+  <!-- 全民叮叮使用class register_all，专业导游使用 register_professional -->
+  <div class="mod_container upload register_all">
+    <div class="register_bg"></div>
+
+    <header class="header">
+      <h1>上传头像</h1>
+    </header>
+
+    <div class="nav_line display_flex">
+
+      <div class="nav_line_split"></div>
+
+      <div class="nav_line_split"></div>
+
+      <div class="nav_line_split"></div>
+
+      <div class="nav_line_split active"></div>
+
+      <div class="nav_line_split"></div>
+
+    </div>
+
+    <div class="upload_form">
+      <p class="upload_form_p upload_form_avatar">
+        <img src="images/avatar_default.png" class="upload_form_avatar_img">
+      </p>
+      <p class="upload_form_p upload_form_tip">
+        上传清晰、真实的头像有助于您更快的
+        <br>通过审核！
+      </p>
+      <p class="upload_form_p">
+        <a href="javascript:;" class="register_form_btn upload_form_choose">从相册选择</a>
+        <input type="file" accept="image/*" multiple="multiple" class="upload_form_file">
+      </p>
+      <p class="upload_form_p">
+        <a href="javascript:;" class="register_form_btn upload_form_shoot">拍摄照片</a>
+        <input type="file" accept="image/*" class="upload_form_file">
+      </p>
+      <p class="upload_form_p upload_form_btns display_flex">
+        <a href="#" class="register_form_btn register_form_prev">上一步</a><a href="#" class="register_form_btn register_form_next">下一步</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- global:js -->
+  <!-- endglobal -->
+
+  <script src="js/upload_avatar.js"></script>
+
+</body>
+
+</html>
