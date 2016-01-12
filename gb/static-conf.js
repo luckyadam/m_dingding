@@ -8,12 +8,10 @@ module.exports = {
       'static/js/class.js'
     ],
     'ui.js': [
-      'static/js/ui/overlay.js',
-      'static/js/ui/dialog.js'
+      'static/js/ui/*.js'
     ],
     'ui.css': [
-      'static/css/ui/overlay.css',
-      'static/css/ui/dialog.css'
+      'static/css/ui/*.css'
     ],
     'iscroll-lite.js': [
       'static/js/iscroll-lite.js'

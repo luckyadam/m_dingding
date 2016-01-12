@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/*
+ * @author: luckyadam
+ * @time: 2016-1-11
+*/
+@import "function";
+html,body {
+  height: 100%;
+}
+.index {
+  min-height: 100%;
+}
+/**** 头部 *****/
+.index_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: rem(2px) solid rgba(238,238,238,.5);
+  z-index: 100;
+}
+/**** tab *****/
+.tab_head_item {
+  display: inline-block;
+  width: rem(180px);
+  height: rem(78px);
+  line-height: rem(78px);
+  box-sizing: border-box;
+  font-size: rem(24px);
+  color: #aaaaaa;
+  text-align: center;
+  vertical-align: middle;
+}
+.tab_head_item.active {
+  color: #fff;
+  position: relative;
+}
+.tab_head_item.active:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: rem(90px);
+  height: rem(4px);
+  background-color: #fff;
+  bottom: 0;
+  left: 50%;
+  margin-left: rem(-45px);
+}
+
+.dl_btn {
+  display: block;
+  width: rem(228px);
+  height: rem(68px);
+  border: rem(4px) solid #fff;
+  color: #fff;
+  font-size: rem(22px);
+  border-radius: rem(68px);
+  box-sizing: border-box;
+  line-height: rem(60px);
+  text-align: center;
+  padding-left: rem(32px);
+  background-position: rem(16px) rem(8px);
+  background-repeat: no-repeat;
+  background-size: rem(36px) rem(44px);
+}
+.dl_btn_ip {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAsCAMAAAA6jerHAAAAqFBMVEVMaXH///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8ewE1eAAAAN3RSTlMAI+1e/gEK+gZBUoWgTBXc6R3gxnFGuNPD9XrxZo2nzUOB8A8rrHPWr2o5KCC8yuWRmwKyL36WS67UvAAAASVJREFUGBmlwddSwlAUBdCdXkgChF5C71VU3P//Z+bmIuAMOT64Fv7Dtz7MBLJWStKFqG+TrEHUpDKC5NOjEkPSptJwIKjbzM0MSIbM9QKIMpLnHWTZubt18ZIfNCurwMXNfphdsuEez+YVk0pvNHGAQ79DrWO940erxrt007D50E2gWR7LVRMogUdJhJybUrKcI3elJHKQ800KTj6UkJIdCl8UNKCdKLhCq1EQQrMpCKBREkPzKNhCq1IQQTtSYLoovFHSRMGiZGBAqVNUPUBZU1SLkZvyD0sAhk3ZBrk2ZTFyE4o6DpQjJSEKC4/luripsFRvgRt/zDIr3BkzvtZ28BB4fKWa4FlrwML4Gk6si8nCuo7f6tHMa0wNFPxwlJrjvovCN5CgyCTFncDXAAAAAElFTkSuQmCC);
+}
+.dl_btn_an {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAArCAMAAAAniNp/AAAAh1BMVEVMaXH///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8s+2B1AAAALHRSTlMAWqrKHsMH4TPd/KDzFmGl7GxMT4HAinABBGT5VUBH2iPS9xt16AxSaTkpmZj+QbQAAAESSURBVHhe7dRJb4IAEIbhT1RUVhFkqytuXd7///uahqYEOyQ28djnNIf3MIfJ6K/iSp0qlimJ1IkKmdy1q3CVnJPV6WuWLXLGtMZOJNt2T2e/leXs0QEvMZqCe6+69+ZBfrjQuhxyeJmrrxwDWfgThRkwLtWzw3K3vI/lQz17LEf1NFiW+qbJ7SDNbdL7ZiLp1uDVmi4sUyXQbKQZEFQzLDM3AGYSAKeB6ARAGzEZiCbPj/6jAPCuA9HVAwIpB2INRPKBXCprv3AHo6rw61Ktwajn+MiNR1hq9aVx+1KWjuMs28fip/ptBDCVNAUYyfBgtHkkWj0t2gGsJa0BUpnCAMgkZUAQyrZbNL4ryfWbRarOJ01iiv3OWXVPAAAAAElFTkSuQmCC);
+}
+.tourist_section {
+  width: 100%;
+}
+.tourist_header,.tourist_footer {
+  position: relative;
+}
+.tourist_section_img {
+  width: 100%;
+  height: auto;
+}
+.tourist_header_dl {
+  position: absolute;
+  right: rem(68px);
+  bottom: rem(64px);
+}
+.tourist_header_dl_ip {
+  margin-bottom: rem(28px);
+}
+.tourist_footer_main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.tourist_footer_title {
+  padding: rem(34px) 0;
+  color: #fff;
+  font-size: rem(30px);
+  font-weight: 400;
+}
+.tourist_footer_dl {
+  flex: 1;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  box-align: center;
+  flex-align: center;
+  align-items: center;
+  box-pack: center;
+  flex-pack: center;
+  justify-content: center;
+}
+.tourist_footer_dl .dl_btn {
+  margin: 0 auto;
+}
+.tourist_footer_dl .tourist_footer_dl_ip {
+  margin-bottom: rem(28px);
+}
+
+.tourist_footer_txt {
+  font-size: rem(18px);
+  color: #bbbbbb;
+}
+.tourist_footer_id {
+  padding-bottom: rem(36px);
+}
+
+/**** 导游版部分 ******/
+.guide_section {
+  width: 100%;
+}
+.guide_section_img {
+  width: 100%;
+  height: auto;
+}
+.guide_header,.guide_footer {
+  position: relative;
+}
+
+.guide_footer_txt {
+  font-size: rem(18px);
+  color: #bbbbbb;
+}
+.guide_footer_id {
+  padding-bottom: rem(36px);
+}
+.guide_footer_title {
+  padding: rem(68px) 0 rem(60px);
+  color: #fff;
+  font-size: rem(30px);
+  font-weight: 400;
+}
+.guide_footer_main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.apply_btn {
+  display: inline-block;
+  width: rem(228px);
+  height: rem(68px);
+  border-radius: rem(68px);
+  background-color: #f79f42;
+  color: #fff;
+  font-size: rem(24px);
+  text-align: center;
+  line-height: rem(68px);
+}
+.guide_header_apply {
+  position: absolute;
+  top: rem(278px);
+  left: 50%;
+  margin-left: rem(-114px);
+}
+.guide_footer_apply {
+  width: 100%;
+  flex: 1;
+  height: 100%;
+}
